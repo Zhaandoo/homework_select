@@ -1,0 +1,18 @@
+SELECT title, released FROM album
+	WHERE released = 2018;
+	
+SELECT title, duration FROM track
+	ORDER BY duration DESC
+	LIMIT 1;
+
+SELECT title FROM track
+	WHERE duration >= 3.5;
+	
+SELECT title FROM collection
+	WHERE released BETWEEN 2018 and 2020;
+	
+SELECT name FROM artist
+	WHERE name NOT LIKE '%% %%';
+	
+SELECT title FROM track
+	WHERE title LIKE '%%my%%';
